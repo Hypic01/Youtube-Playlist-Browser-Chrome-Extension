@@ -8,6 +8,7 @@
     background-color: hsl(0, 0%, 7%);
     color: #888888;
     border: 1px solid hsl(0, 0%, 13%);
+    box-shadow: 0 0 0 1px rgba(220, 0, 0, 0.5); /* subtle dark YouTube red outline */
     border-radius: 40px;
     height: 40px;
     width: 300px;
