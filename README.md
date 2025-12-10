@@ -7,5 +7,6 @@
   - Title of the video
   - The name of the channel
 
-![CleanShot 2024-09-13 at 21 59 59@2x](https://github.com/user-attachments/assets/f79e3496-c9f4-4b45-8f41-5304eb754672)
-![CleanShot 2024-09-13 at 22 03 49@2x](https://github.com/user-attachments/assets/c699dfff-1a4c-4055-987a-1c95774e74a2)
+<img width="2560" height="1440" alt="CleanShot 2025-12-10 at 14 43 35" src="https://github.com/user-attachments/assets/0fd1e6c2-bad0-4d58-bb0c-9ea76f972336" />
+<img width="2560" height="1440" alt="CleanShot 2025-12-10 at 14 43 43" src="https://github.com/user-attachments/assets/2c512b9c-2c4f-458c-a976-5e3bda118087" />
+<img width="2560" height="1440" alt="CleanShot 2025-12-10 at 14 43 55" src="https://github.com/user-attachments/assets/c934315b-1a66-4834-8a60-5dae76327c7b" />
