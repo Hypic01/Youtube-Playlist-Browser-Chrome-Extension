@@ -128,14 +128,29 @@ function observePlaylistChanges() {
 
 // Function to handle URL changes (client-side routing)
 function listenForPageChanges() {
-  let lastUrl = location.href;
-  new MutationObserver(() => {
-    const url = location.href;
-    if (url !== lastUrl) {
-      lastUrl = url;
-      onUrlChange();
-    }
-  }).observe(document, {subtree: true, childList: true});
+  // YouTube fires this custom event after every SPA navigation
+  window.addEventListener('yt-navigate-finish', () => {
+    onUrlChange();
+  });
+
+  // Also catch browser back/forward
+  window.addEventListener('popstate', () => {
+    onUrlChange();
+  });
+
+  // Fallback: intercept pushState/replaceState in case the above miss anything
+  const originalPushState = history.pushState;
+  const originalReplaceState = history.replaceState;
+
+  history.pushState = function (...args) {
+    originalPushState.apply(this, args);
+    onUrlChange();
+  };
+
+  history.replaceState = function (...args) {
+    originalReplaceState.apply(this, args);
+    onUrlChange();
+  };
 }
 
 function onUrlChange() {
